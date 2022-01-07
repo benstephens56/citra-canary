@@ -222,10 +222,10 @@ Movie::PlayMode Movie::GetPlayMode() const {
 }
 
 u64 Movie::GetCurrentInputIndex() const {
-    return current_input;
+    return ceil(current_input * (60 / 234));
 }
 u64 Movie::GetTotalInputCount() const {
-    return total_input;
+    return ceil(total_input * (60 / 234));
 }
 
 void Movie::CheckInputEnd() {

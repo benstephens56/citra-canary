@@ -1,4 +1,4 @@
-// Copyright 2017 Citra Emulator Project
+r// Copyright 2017 Citra Emulator Project
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
@@ -222,10 +222,10 @@ Movie::PlayMode Movie::GetPlayMode() const {
 }
 
 u64 Movie::GetCurrentInputIndex() const {
-    return ceil(current_input * (60 / 234));
+    return nearbyint(current_input * 0.25641026369090248140072094688549);
 }
 u64 Movie::GetTotalInputCount() const {
-    return ceil(total_input * (60 / 234));
+    return nearbyint(total_input * 0.25641026369090248140072094688549);
 }
 
 void Movie::CheckInputEnd() {

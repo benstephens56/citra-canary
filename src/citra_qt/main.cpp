@@ -1111,7 +1111,7 @@ void GMainWindow::BootGame(const QString& filename) {
         game_list->hide();
         game_list_placeholder->hide();
     }
-    status_bar_update_timer.start(1000);
+    status_bar_update_timer.start(16);
 
     if (UISettings::values.hide_mouse) {
         mouse_hide_timer.start();

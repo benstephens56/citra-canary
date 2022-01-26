@@ -222,10 +222,10 @@ Movie::PlayMode Movie::GetPlayMode() const {
 }
 
 u64 Movie::GetCurrentInputIndex() const {
-    return nearbyint(current_input * 0.25641026369090248140072094688549);
+    return nearbyint(current_input * 0.25569817022435414455181644152352);
 }
 u64 Movie::GetTotalInputCount() const {
-    return nearbyint(total_input * 0.25641026369090248140072094688549);
+    return nearbyint(total_input * 0.25569817022435414455181644152352);
 }
 
 void Movie::CheckInputEnd() {
